@@ -56,7 +56,7 @@ students = [eren, mikasa, armin]
 
 for student in students:
     print("\nHere's the student information for:")
-    #Getting the key and value from the dictionary and making it a tuple to loop it
+    #Getting the key and value from the dictionary and making it a tuple to loop it.
     for key, value in student.items():
         print("{}: {}".format(key, value))
 
