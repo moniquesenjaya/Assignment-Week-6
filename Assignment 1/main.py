@@ -1,5 +1,5 @@
 inventory = {
-    'gold' : 500,
+    'gold' : [500],
     'pouch' : ['flint', 'twine', 'gemstone'],
     'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
 }
@@ -14,5 +14,6 @@ inventory['backpack'].sort()
 inventory['backpack'].remove('dagger')
 
 #Adding 50 under the gold key
-inventory['gold'] = [500, 50]
+inventory['gold'].append(50)
+
 
