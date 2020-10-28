@@ -1,15 +1,13 @@
 #Function to calculate average of numbers in a list
 def average(numbers):
-    total = sum(numbers)
-    total = float(total)
-    return total/len(numbers)
+    return sum(numbers)/len(numbers)
 
 #To calculate a student's average with the weightage
 def get_average(student):
     homework = average(student["homework"])
     quizzes = average(student["quizzes"])
     tests = average(student["tests"])
-    return homework*10/100 + quizzes*30/100 + tests*60/100
+    return homework*0.1 + quizzes*0.3 + tests*0.6
 
 #Calculating the letter grade based on a number
 def get_letter_grade(score):
